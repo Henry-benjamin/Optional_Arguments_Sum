@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>Build an Optional Arguments Sum Function</h1>
+
+    <main>
+      <!-- Expandable Project Summary -->
+      <details class="summary-details-card">
+        <summary>
+          <strong>Project Overview: Bubble Sort Visualizer</strong>
+        </summary>
+
+        <div class="summary-content">
+          <p>
+            This project is an interactive algorithm visualizer designed to
+            demonstrate how
+            <strong>Bubble Sort</strong> works step-by-step using vanilla
+            JavaScript, HTML, and CSS.
+          </p>
+
+          <h3>Key Features & Workflow:</h3>
+          <ul>
+            <li>
+              <strong>Array Generation:</strong> Clicking
+              <em>Generate Array</em> creates a random 5-element array with
+              integers between 1 and 100.
+            </li>
+            <li>
+              <strong>Step-by-Step Visualization:</strong> Clicking
+              <em>Sort Array</em> generates a timeline of container elements
+              showing every single comparison iteration.
+            </li>
+            <li>
+              <strong>Active Element Highlighting:</strong> The pair of numbers
+              being evaluated in each step is highlighted with a
+              <code>2px dashed red</code> border.
+            </li>
+            <li>
+              <strong>In-Place Swapping:</strong> Out-of-order adjacent elements
+              are swapped using custom comparison logic (<code>isOrdered</code>
+              and <code>swapElements</code>).
+            </li>
+            <li>
+              <strong>Final Sorted State:</strong> Once the algorithm completes
+              a pass with zero swaps, the fully sorted array is displayed at the
+              end with a <code>2px solid green</code> border.
+            </li>
+          </ul>
+        </div>
+      </details>
+
+      <div class="controls-container">
+        <div id="array-container">
+          <div id="starting-array"></div>
+        </div>
+        <div id="btn-container">
+          <button id="generate-btn" type="button">Generate Array</button>
+          <button id="sort-btn" type="button">Sort Array</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
